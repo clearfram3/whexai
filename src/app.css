@@ -1,3 +1,45 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss";
+@theme {
+  --container-sm: 600px; /* Default: 640px */
+  --container-md: 700px; /* Default: 768px */
+  --container-lg: 700px; /* Default: 1024px */
+  --container-xl: 700px; /* Default: 1280px */
+  --container-2xl: 700px; /* Default: 1536px */
+}
+
+
+@media screen and (min-width: 640px) {
+  .padding-block {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+  .padding-block {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+  
+}
+@media screen and (min-width: 1024px) {
+  .padding-block {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+
+}
+@media screen and (min-width: 1280px) {
+  .padding-block {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+  
+}
+
+.offside-regular {
+  font-family: "Offside", serif;
+  font-weight: 400;
+  font-style: normal;
+}

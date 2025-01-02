@@ -1,6 +1,14 @@
 <script lang="ts">
 	import '../app.css';
+	import Navbar from '$lib/Navbar.svelte';
+	import Footer from '$lib/Footer.svelte';
+
 	let { children } = $props();
 </script>
 
-{@render children()}
+<Navbar />
+<main class="min-h-[calc(100vh-122px)]">
+	{@render children()}
+</main>
+
+<Footer />
