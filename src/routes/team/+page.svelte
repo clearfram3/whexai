@@ -1,5 +1,6 @@
 <script lang="ts">
 	import IconLinkedIn from '$lib/icons/IconLinkedIn.svelte';
+	import Spacer from '$lib/slices/Spacer.svelte';
 
 	const teamMembers = [
 		{
@@ -26,40 +27,48 @@
 	];
 </script>
 
-<section class="mx-auto border-x-2 border-zinc-800 sm:max-w-[1200px]">
-	<div class="px-6 py-12">
-		<code class="text-zinc-400">this is the team</code>
-		<h1 class="mt-6 mb-8 text-6xl font-bold">Team</h1>
-		<p class="text-xl text-zinc-500">Many Backgrounds—One Goal</p>
+<main class="min-h-[calc(100vh-124px)]">
+	<div class="border-b-2">
+		<section class="mx-auto border-x-2 border-zinc-800 sm:max-w-[1200px]">
+			<div class="px-6 py-12">
+				<code class="text-zinc-400">who we are —</code>
+				<h1 class="mt-6 mb-8 text-6xl font-bold">Team</h1>
+				<p class="text-xl text-zinc-500">Many Backgrounds—One Goal</p>
+			</div>
+		</section>
 	</div>
-</section>
 
-<div class="border-y-2 border-zinc-800">
-	<section class="container mx-auto border-x-2 border-zinc-800 py-12">
-		<div class="grid grid-cols-1 gap-8 px-6 md:grid-cols-2 lg:grid-cols-3">
-			{#each teamMembers as member}
-				<div
-					class="transform overflow-hidden rounded-lg bg-white shadow-lg transition duration-300 hover:scale-105"
-				>
-					<img
-						src={member.image}
-						alt={member.name}
-						class="h-64 w-full object-cover object-center"
-					/>
-					<div class="p-6">
-						<h3 class="text-2xl font-bold text-gray-800">{member.name}</h3>
-						<p class="mt-2 text-zinc-600">{member.title}</p>
-						<div class="mt-4 flex space-x-4">
-							<a href="/" class="text-blue-500 hover:text-blue-700">
-								<IconLinkedIn />
-							</a>
-							<a href="/" class="text-blue-500 hover:text-blue-700">
-								<IconLinkedIn />
-							</a>
+	<Spacer />
+
+	<section class="border-y-2 border-zinc-800">
+		<section class="mx-auto border-x-2 border-zinc-800 py-12 sm:max-w-[1200px]">
+			<div class="grid grid-cols-1 gap-8 px-6 md:grid-cols-2 lg:grid-cols-3">
+				{#each teamMembers as member}
+					<div
+						class="transform overflow-hidden rounded-lg bg-white shadow-lg transition duration-300 hover:scale-105"
+					>
+						<img
+							src={member.image}
+							alt={member.name}
+							class="h-64 w-full object-cover object-center"
+						/>
+						<div class="p-6">
+							<h3 class="text-2xl font-bold text-gray-800">{member.name}</h3>
+							<p class="mt-2 text-zinc-600">{member.title}</p>
+							<div class="mt-4 flex space-x-4">
+								<a href="/" class="text-blue-500 hover:text-blue-700">
+									<IconLinkedIn />
+								</a>
+								<a href="/" class="text-blue-500 hover:text-blue-700">
+									<IconLinkedIn />
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
-			{/each}
-		</div>
+				{/each}
+			</div>
+		</section>
 	</section>
-</div>
+
+	<Spacer />
+</main>
