@@ -21,3 +21,5 @@ Our mission is to have AI better serve Humanity, by understanding Humanity. We b
 ## What We Do
 
 We build tools and frameworks that help shape AI development with human values at their core. Through research, education, and practical applications, we work to ensure AI systems are developed with a deep understanding of human needs, ethics, and real-world impact.
+
+Dell Doyle is a seasoned leader with nearly 15 years of experience driving innovation and collaboration in the plastics industry. As the Application Technology Expert for Dow Chemical’s North American Pipe team, he has spearheaded groundbreaking research in composite materials and resin development, earning multiple industry awards. A passionate advocate for advancing engineering, Dell excels in building high-performing teams and leveraging AI to accelerate research and optimize material design. His strategic leadership and commitment to innovation continue to shape the future of the industry.

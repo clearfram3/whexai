@@ -19,7 +19,7 @@
 			image: 'profile-dell-doyle.jpeg',
 			linkedinURL: 'https://www.linkedin.com/in/delldoyle/',
 			description:
-				'Daniel Johns is the driving force behind the Whole Human eXperience. With a background in aerospace engineering and a passion for innovation, he has been instrumental in shaping the company’s mission and strategy. Daniel’s expertise in AI and technology has been crucial in developing the company’s cutting-edge solutions. He is dedicated to using technology to improve the lives of individuals and communities.'
+				'Dell Doyle is a seasoned leader with nearly 15 years of experience driving innovation and collaboration in the plastics industry. As the Application Technology Expert for Dow Chemical’s North American Pipe team, he has spearheaded groundbreaking research in composite materials and resin development, earning multiple industry awards. A passionate advocate for advancing engineering, Dell excels in building high-performing teams and leveraging AI to accelerate research and optimize material design. His strategic leadership and commitment to innovation continue to shape the future of the industry.'
 		},
 		{
 			name: 'Erik Kelly',
@@ -36,7 +36,7 @@
 			image: 'profile-nick.jpeg',
 			linkedinURL: 'https://www.linkedin.com/in/nicholas-tijerina-64b664208/',
 			description:
-				'Nick Tijerina is a dedicated professional with a strong background in the oil and gas industry, currently serving as a Field Specialist at Baker Hughes. He holds a Bachelor of Science in Mechanical Engineering from Texas A&M University. Nick’s expertise includes wellbore intervention, production optimization, and equipment maintenance. He is recognized for his problem-solving skills and commitment to safety and efficiency in field operations.'
+				'Nicholas holds an MS in Aerospace Engineering with expertise in Control Systems and Dynamics. His work focuses on airfoil stability, flutter prediction, and multidisciplinary optimization. As a contractor with ARCTOS through the Air Force Research Laboratory, he leverages tools like ESP, ASTROS, and Nastran to advance aerospace innovation, with a growing focus on applying AI to implement cutting-edge research in controls and aerospace systems.'
 		},
 		{
 			name: 'Caspian Harvey',
@@ -48,10 +48,13 @@
 		},
 		{
 			name: 'Skye Binion',
-			title: 'Researcher, Sales Euducation',
+			title: 'Institute Manger & Researcher, Sales Euducation',
 			image: 'profile-skye-binion.jpg',
 			linkedinURL: 'https://www.linkedin.com/in/skye-binion/',
-			description: `Skye Binion is an Institute Manager at the C.T. Bauer College of Business, University of Houston. In this role, she manages the Institute's students and leads and mentors the Key Accounts teams.`
+			description:
+				'Skye Binion is the Institute Manager at the Stephen Stagner Sales Excellence Institute, University of Houston. She oversees student development, mentors Key Accounts teams, and manages corporate partnerships to advance sales strategies. Currently pursuing a Master of Finance specializing in Financial Planning and Wealth Management, Skye combines her professional and academic expertise to shape the next generation of sales leaders.'
+			// description:
+			// 	'Skye Binion is the Institute Manager at the Stephen Stagner Sales Excellence Institute, where she mentors students, leads Key Accounts teams, and manages corporate partnerships. She is also pursuing a Master of Finance to further her expertise in financial planning and sales leadership.'
 		}
 	];
 </script>
@@ -80,23 +83,23 @@
 							alt={member.name}
 							class="h-50 w-50 object-cover object-center"
 						/>
+
 						<div class="flex-1 p-4">
-							<h3 class="text-xl font-bold text-gray-800">{member.name}</h3>
+							<div class="mb-2 flex items-center justify-between">
+								<h3 class="text-xl font-bold text-gray-800">{member.name}</h3>
+								<div class="flex space-x-3">
+									{#if member?.githubURL}
+										<a href="/" class="text-blue-500 hover:text-blue-700">
+											<IconGithub />
+										</a>
+									{/if}
+									<a href={member.linkedinURL} class="text-blue-500 hover:text-blue-700">
+										<IconLinkedIn />
+									</a>
+								</div>
+							</div>
 							<p class="mt-1 text-sm text-zinc-600">{member.title}</p>
 							<p class="mt-2 text-sm text-zinc-500">{member.description}</p>
-							<div class="mt-3 flex space-x-3">
-								{#if member?.githubURL}
-									<a href="/" class="text-blue-500 hover:text-blue-700">
-										<IconGithub />
-									</a>
-								{/if}
-								<a href={member.linkedinURL} class="text-blue-500 hover:text-blue-700">
-									<IconLinkedIn />
-								</a>
-								<!-- <a href="/" class="text-blue-500 hover:text-blue-700">
-									<IconX />
-								</a> -->
-							</div>
 						</div>
 					</div>
 				{/each}
