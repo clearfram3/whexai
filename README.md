@@ -1,3 +1,13 @@
+# Team:
+
+- Me
+- nick
+- caspian
+- Daniel Rod.
+- erik Kelly
+- Dr. Song
+-
+
 # WHeX ai
 
 This is the repository for the WHeX ai website.

@@ -6,31 +6,52 @@
 
 	const teamMembers = [
 		{
-			name: 'Jane Doe',
-			title: 'Chief Executive Officer',
-			// image: '/images/team/jane-doe.jpg',
-			image: 'https://i.pravatar.cc/300',
-			description: 'Visionary leader with 15 years of tech industry experience.'
+			name: 'Daniel Johns',
+			title: 'President & Founder',
+			image: 'profile-daniel-johns.jpeg',
+			linkedinURL: 'https://www.linkedin.com/in/daniel-johns-a41403117/',
+			description:
+				'Daniel Johns is the driving force behind the Whole Human eXperience. With a background in aerospace engineering and a passion for innovation, he has been instrumental in shaping the company’s mission and strategy. Daniel’s expertise in AI and technology has been crucial in developing the company’s cutting-edge solutions. He is dedicated to using technology to improve the lives of individuals and communities.'
 		},
 		{
-			name: 'John Smith',
-			title: 'Chief Technology Officer',
-			// image: '/images/team/john-smith.jpg',
-			image: 'https://i.pravatar.cc/300',
-			description: 'Expert in cutting-edge software architecture and innovation.'
+			name: 'Dr. Dell Doyle',
+			title: 'Director, Research',
+			image: 'profile-dell-doyle.jpeg',
+			linkedinURL: 'https://www.linkedin.com/in/delldoyle/',
+			description:
+				'Daniel Johns is the driving force behind the Whole Human eXperience. With a background in aerospace engineering and a passion for innovation, he has been instrumental in shaping the company’s mission and strategy. Daniel’s expertise in AI and technology has been crucial in developing the company’s cutting-edge solutions. He is dedicated to using technology to improve the lives of individuals and communities.'
 		},
 		{
-			name: 'Emily Chen',
-			title: 'Head of Product Design',
-			// image: '/images/team/emily-chen.jpg',
-			image: 'https://i.pravatar.cc/300',
-			description: 'Design thinking expert with a passion for user-centric solutions.'
+			name: 'Erik Kelly',
+			title: 'Director, Engineering',
+			image: 'profile-erik-kelly.jpeg',
+			linkedinURL: 'https://www.linkedin.com/in/erik-kelly-36820a7/',
+			description:
+				'Erik Kelly, Director of Engineering at SaraWorks, specializes in the development and management of cloud-based multi-tenant SaaS solutions. With over 25 years of experience in Microsoft technologies, he leads a high-performing agile development team delivering mission-critical applications for government agencies nationwide.'
+		},
+
+		{
+			name: 'Nicholas Tijerina',
+			title: 'Researcher, Aerospace Engineering and Controls',
+			image: 'profile-nick.jpeg',
+			linkedinURL: 'https://www.linkedin.com/in/nicholas-tijerina-64b664208/',
+			description:
+				'Nick Tijerina is a dedicated professional with a strong background in the oil and gas industry, currently serving as a Field Specialist at Baker Hughes. He holds a Bachelor of Science in Mechanical Engineering from Texas A&M University. Nick’s expertise includes wellbore intervention, production optimization, and equipment maintenance. He is recognized for his problem-solving skills and commitment to safety and efficiency in field operations.'
 		},
 		{
-			name: 'Alex Johnson',
-			title: 'Lead Software Engineer',
-			image: 'https://i.pravatar.cc/300',
-			description: 'Full-stack developer with a focus on scalable systems.'
+			name: 'Caspian Harvey',
+			title: 'Researcher, Education & Materials Engineering',
+			image: 'profile-caspian-harvey.png',
+			linkedinURL: 'https://www.linkedin.com/in/caspianharvey/',
+			description:
+				'Caspian Harvey brings a unique blend of technical expertise and educational experience to the team. With a Bachelor of Science in Mechanical Engineering and extensive experience in STEM education, he specializes in materials engineering research. His diverse background in engineering, computer programming, and teaching enables him to approach technical challenges with both analytical precision and clear communication skills.'
+		},
+		{
+			name: 'Skye Binion',
+			title: 'Researcher, Sales Euducation',
+			image: 'profile-skye-binion.jpg',
+			linkedinURL: 'https://www.linkedin.com/in/skye-binion/',
+			description: `Skye Binion is an Institute Manager at the C.T. Bauer College of Business, University of Houston. In this role, she manages the Institute's students and leads and mentors the Key Accounts teams.`
 		}
 	];
 </script>
@@ -64,15 +85,17 @@
 							<p class="mt-1 text-sm text-zinc-600">{member.title}</p>
 							<p class="mt-2 text-sm text-zinc-500">{member.description}</p>
 							<div class="mt-3 flex space-x-3">
-								<a href="/" class="text-blue-500 hover:text-blue-700">
-									<IconGithub />
-								</a>
-								<a href="/" class="text-blue-500 hover:text-blue-700">
+								{#if member?.githubURL}
+									<a href="/" class="text-blue-500 hover:text-blue-700">
+										<IconGithub />
+									</a>
+								{/if}
+								<a href={member.linkedinURL} class="text-blue-500 hover:text-blue-700">
 									<IconLinkedIn />
 								</a>
-								<a href="/" class="text-blue-500 hover:text-blue-700">
+								<!-- <a href="/" class="text-blue-500 hover:text-blue-700">
 									<IconX />
-								</a>
+								</a> -->
 							</div>
 						</div>
 					</div>
