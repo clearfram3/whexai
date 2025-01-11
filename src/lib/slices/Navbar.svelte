@@ -10,19 +10,12 @@
 	>
 		<a href="/" class="offside-regular flex items-center text-xl">
 			<!-- <img src="/logo.svg" alt="Logo" class="h-8" /> -->
-			WHeX ai
+			whex ai
 		</a>
 		<ul class="flex space-x-8">
 			<li>
 				<a href="/" class="hover:text-violet-400" class:text-violet-400={page.url.pathname == '/'}
 					>Home</a
-				>
-			</li>
-			<li>
-				<a
-					href="/blog"
-					class="hover:text-violet-400"
-					class:text-violet-400={page.url.pathname == '/blog'}>Blog</a
 				>
 			</li>
 			<li>
@@ -33,11 +26,18 @@
 				>
 			</li>
 			<li>
+				<a
+					href="/blog"
+					class="hover:text-violet-400"
+					class:text-violet-400={page.url.pathname == '/blog'}>Blog</a
+				>
+			</li>
+			<!-- <li>
 				<a href="/team" class="hover:text-violet-400"><IconLinkedIn /></a>
-			</li>
-			<li>
+			</li> -->
+			<!-- <li>
 				<a href="/team" class="hover:text-violet-400"><IconX /></a>
-			</li>
+			</li> -->
 		</ul>
 	</nav>
 </header>

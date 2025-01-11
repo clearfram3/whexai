@@ -46,7 +46,7 @@
 <section class="border-b-2 border-zinc-800">
 	<div class="mx-auto border-x-2 px-20 py-12 sm:max-w-[1200px]">
 		<code class="text-zinc-500">the Whole Human eXperience</code>
-		<h1 class="offside-regular mt-6 mb-8 text-7xl font-bold">WHeX ai</h1>
+		<h1 class="offside-regular mt-6 mb-8 text-7xl font-bold">whex ai</h1>
 		<!-- <h1 class="mt-6 mb-8 text-6xl font-bold">
 			Whole<br />
 			Human<br />

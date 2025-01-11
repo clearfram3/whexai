@@ -14,6 +14,13 @@
 				'Daniel Johns is the driving force behind the Whole Human eXperience. With a background in aerospace engineering and a passion for innovation, he has been instrumental in shaping the company’s mission and strategy. Daniel’s expertise in AI and technology has been crucial in developing the company’s cutting-edge solutions. He is dedicated to using technology to improve the lives of individuals and communities.'
 		},
 		{
+			name: 'Dr. Gangbing Song',
+			title: 'Board Member & Researcher',
+			image: 'profile-song.jpg',
+			linkedinURL: 'https://www.me.uh.edu/faculty/song-gangbing',
+			description: ''
+		},
+		{
 			name: 'Dr. Dell Doyle',
 			title: 'Director, Research',
 			image: 'profile-dell-doyle.jpeg',
@@ -48,13 +55,20 @@
 		},
 		{
 			name: 'Skye Binion',
-			title: 'Institute Manger & Researcher, Sales Euducation',
+			title: 'Researcher, Sales Education',
 			image: 'profile-skye-binion.jpg',
 			linkedinURL: 'https://www.linkedin.com/in/skye-binion/',
 			description:
 				'Skye Binion is the Institute Manager at the Stephen Stagner Sales Excellence Institute, University of Houston. She oversees student development, mentors Key Accounts teams, and manages corporate partnerships to advance sales strategies. Currently pursuing a Master of Finance specializing in Financial Planning and Wealth Management, Skye combines her professional and academic expertise to shape the next generation of sales leaders.'
 			// description:
 			// 	'Skye Binion is the Institute Manager at the Stephen Stagner Sales Excellence Institute, where she mentors students, leads Key Accounts teams, and manages corporate partnerships. She is also pursuing a Master of Finance to further her expertise in financial planning and sales leadership.'
+		},
+		{
+			name: 'David Johns',
+			title: 'Researcher, Sales Education & Finance Education',
+			image: 'profile-david.png',
+			linkedinURL: 'https://www.linkedin.com/in/david-johns-18311b78/',
+			description: ''
 		}
 	];
 </script>

@@ -11,9 +11,9 @@
 	>
 		<a href="/" class="offside-regular flex items-center text-xl">
 			<!-- <img src="/logo.svg" alt="Logo" class="h-8" /> -->
-			WHeX ai
+			whex ai
 		</a>
-		<div class="inline-flex items-center text-sm">Copyright <IconCopyright /> 2025 WHeX AI</div>
+		<div class="inline-flex items-center text-sm">Copyright <IconCopyright /> 2025 whex ai</div>
 		<ul class="hidden space-x-8 md:flex">
 			<li>
 				<a href="/" class="hover:text-violet-400" class:text-violet-400={page.url.pathname == '/'}
