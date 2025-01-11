@@ -90,29 +90,33 @@
 			<div class="grid grid-cols-1 gap-6 px-6 md:grid-cols-2">
 				{#each teamMembers as member}
 					<div
-						class="flex transform overflow-hidden rounded-lg bg-white shadow-lg transition duration-300 hover:scale-105"
+						class="wrap flex transform flex-col overflow-hidden rounded-lg bg-white shadow-lg transition duration-300 hover:scale-105 sm:flex-row"
 					>
 						<img
 							src={member.image}
 							alt={member.name}
-							class="h-50 w-50 object-cover object-center"
+							class="h-72 w-full object-cover object-center sm:h-auto sm:w-48"
 						/>
-
-						<div class="flex-1 p-4">
-							<div class="mb-2 flex items-center justify-between">
-								<h3 class="text-xl font-bold text-gray-800">{member.name}</h3>
-								<div class="flex space-x-3">
-									{#if member?.githubURL}
-										<a href="/" class="text-blue-500 hover:text-blue-700">
-											<IconGithub />
+						<!-- member-content -->
+						<div class="flex flex-1 flex-col p-4">
+							<div>
+								<div
+									class="mb-2 flex flex-col items-start justify-between sm:flex-row sm:items-center"
+								>
+									<h3 class="text-xl font-bold text-gray-800">{member.name}</h3>
+									<div class="flex space-x-3">
+										{#if member?.githubURL}
+											<a href="/" class="text-blue-500 hover:text-blue-700">
+												<IconGithub />
+											</a>
+										{/if}
+										<a href={member.linkedinURL} class="text-blue-500 hover:text-blue-700">
+											<IconLinkedIn />
 										</a>
-									{/if}
-									<a href={member.linkedinURL} class="text-blue-500 hover:text-blue-700">
-										<IconLinkedIn />
-									</a>
+									</div>
 								</div>
+								<p class="mt-1 text-sm text-zinc-600">{member.title}</p>
 							</div>
-							<p class="mt-1 text-sm text-zinc-600">{member.title}</p>
 							<p class="mt-2 text-sm text-zinc-500">{member.description}</p>
 						</div>
 					</div>
