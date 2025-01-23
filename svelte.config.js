@@ -1,7 +1,5 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapterVercel from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-
-import adapterStatic from '@sveltejs/adapter-static';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -23,10 +21,10 @@ const config = {
 		// 	precompress: false,
 		// 	strict: true
 		// })
-		adapter: adapterStatic({})
+		adapter: adapterVercel({})
 	},
 
-	extensions: ['.sv', '.svelte', '.svx']
+	extensions: ['.svelte', '.svx']
 };
 
 export default config;

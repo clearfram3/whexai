@@ -1,6 +1,8 @@
 <script>
 	import BlogPost from '$lib/slices/BlogPost.svelte';
 	import Spacer from '$lib/slices/Spacer.svelte';
+	export const prerender = true;
+
 	const posts = [
 		{
 			title: 'The Future of AI in Healthcare',

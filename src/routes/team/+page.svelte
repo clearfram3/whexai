@@ -4,6 +4,8 @@
 	import IconX from '$lib/icons/IconX.svelte';
 	import Spacer from '$lib/slices/Spacer.svelte';
 
+	export const prerender = true;
+
 	const teamMembers = [
 		{
 			name: 'Daniel Johns',

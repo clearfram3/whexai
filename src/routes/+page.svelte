@@ -1,6 +1,7 @@
 <script>
 	import Spacer from '$lib/slices/Spacer.svelte';
 	import { onMount } from 'svelte';
+	export const prerender = true;
 
 	// let startupMS = 0;
 
